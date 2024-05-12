@@ -40,7 +40,7 @@ export default function Home() {
     const closePopup = (updateData) => {
      if(updateData && updateData.id){
         let data = [...userData];
-        let ind = data.find(val => val.id == updateData.id)
+        let ind = data.find(val => val.id === updateData.id)
         if(ind){
            
             data[ind.id-1] = updateData;
